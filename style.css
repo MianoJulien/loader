@@ -1,6 +1,4 @@
-*,
-:hover,
-::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,7 +6,15 @@
 body {
   background: whitesmoke;
   font-family: Arial, Helvetica, sans-serif;
+  height: 600px;
+  width: 600px;
+  border: 2px solid rgba(0, 0, 0, 0.233);
+  border-radius: 300px;
+  margin: 100px auto;
+  animation: load 6s 0.5s ease-in-out infinite;
+  transform: rotateY(0deg);
 }
+
 .glasses {
   height: 100px;
   width: 60px;
@@ -37,7 +43,7 @@ h1 {
   text-align: center;
   align-items: center;
   justify-content: center;
-  animation: load 6s 0.5s ease-in-out infinite;
+  animation: load 2s 0.5s ease-in-out infinite;
   transform: rotateY(0deg);
   font-weight: 900;
   background-clip: text;
